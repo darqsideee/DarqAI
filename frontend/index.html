@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarqAI - AI Asistent</title>
+    <style>
+        /* ZDE VLOŽTE CELÝ CSS KÓD Z PŘEDCHOZÍ ZPRÁVY */
+        :root{ --bg:#0b0710; --accent:#7c3aed; /* atd... */ }
+        /* ... kompletní CSS stylování ... */
+    </style>
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo">
+                    <span class="dot"></span>
+                    <h1>DarqAI</h1>
+                </div>
+                <button id="open-custom" class="custom-btn">✎ Vlastní pokyny</button>
+            </div>
+            <div class="history" id="history"></div>
+            <button id="new-chat" class="new-chat">+ Nový rozhovor</button>
+        </aside>
+
+        <main class="chat">
+            <div class="messages" id="messages"></div>
+            <div class="composer">
+                <textarea id="input" placeholder="Napiš zprávu..."></textarea>
+                <button id="send" class="send">Odeslat</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modaly -->
+    <div id="modal" class="modal-backdrop">
+        <div class="modal">
+            <h2>Vlastní pokyny</h2>
+            <textarea id="custom"></textarea>
+            <select id="lang-select">
+                <option value="cs">Čeština</option>
+                <option value="en">English</option>
+            </select>
+            <div class="actions">
+                <button id="cancel-modal" class="btn-ghost">Zrušit</button>
+                <button id="save-modal" class="btn-primary">Uložit</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ZDE VLOŽTE CELÝ JAVASCRIPT KÓD Z PŘEDCHOZÍ ZPRÁVY
+        // (app.js, conversationManager.js, patternMatcher.js v jednom)
+        const API_BASE = 'http://localhost:5500';
+        
+        class DarqAIApp {
+            constructor() {
+                this.init();
+            }
+            // ... kompletní JavaScript kód ...
+        }
+        
+        new DarqAIApp();
+    </script>
+</body>
+</html>
